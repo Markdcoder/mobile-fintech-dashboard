@@ -1,0 +1,62 @@
+import {MockData} from '../types';
+
+export const mockData: MockData = {
+  bank: 'US Bank',
+  accountName: 'Business Checking · USD',
+  accountNoMasked: '•••• 1924',
+  owner: 'NATASHA NICE ROYALTIES',
+  status: 'Frozen',
+  balance: 555782.45,
+  available: 552120.12,
+  lastUpdated: '2025-08-15 12:45 PM',
+  actions: [
+    {id: 'send', label: 'Send', iconName: 'send'},
+    {id: 'deposit', label: 'Deposit', iconName: 'cloud-upload'},
+    {id: 'billpay', label: 'Bill Pay', iconName: 'credit-card'},
+    {id: 'wire', label: 'Wire', iconName: 'university'},
+    {id: 'exchange', label: 'Exchange', iconName: 'exchange'},
+    {id: 'topup', label: 'Top Up', iconName: 'smartphone'},
+  ],
+  transactions: [
+    {
+      id: 't1',
+      date: '2025-08-15',
+      desc: 'Wire Transfer · External Account (Wells Fargo)',
+      amount: -10000,
+      category: 'Wire',
+      refCode: 'WX9-441A',
+    },
+    {
+      id: 't2',
+      date: '2025-08-10',
+      desc: 'Zelle · Tom Jerry',
+      amount: -5000,
+      category: 'P2P',
+      refCode: 'ZL-1094',
+    },
+    {
+      id: 't3',
+      date: '2025-08-07',
+      desc: 'Incoming Credit · FirstOntario Credit Union',
+      amount: 550000,
+      category: 'Incoming',
+      refCode: 'CR-2231',
+    },
+    {
+      id: 't4',
+      date: '2025-08-03',
+      desc: 'Wire Transfer · FirstOntario Credit Union',
+      amount: -550000,
+      category: 'Wire',
+      refCode: 'WX9-430B',
+    },
+    {
+      id: 't5',
+      date: '2025-08-01',
+      desc: 'Bill Pay · Utilities',
+      amount: -1200,
+      category: 'Bill',
+      refCode: 'BP-7720',
+    },
+  ],
+};
