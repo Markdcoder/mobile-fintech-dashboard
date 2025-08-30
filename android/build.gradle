@@ -16,16 +16,6 @@ buildscript {
     }
 }
 
-plugins {
-    id("com.facebook.react.settings")
-}
-
-extensions.configure(com.facebook.react.ReactSettingsExtension){ ex ->
-    if (System.getenv('REACT_NATIVE_UNSTABLE_USE_HERMES') == 'false') {
-        ex.hermesEnabled.set(false)
-    }
-}
-
 allprojects {
     repositories {
         google()
